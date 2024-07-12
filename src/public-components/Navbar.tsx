@@ -1,20 +1,16 @@
-import { Flex } from '@chakra-ui/react';
+import logo from '../images/Webshop_transparent.png';
+import '../styles/NavbarStyles.css';
+import { Button } from 'react-aria-components';
 
 function Navbar() {
+
   return (
     <>
-      <Flex
-        as="header"
-        align="center"
-        justify="space-between"
-        padding="1rem"
-        bg="#ffffff"
-        position="sticky"
-        backgroundColor={'teal'}
-        top={0}
-      >
-        
-      </Flex>
+      <div className='Body'>
+        <img src={logo} alt="Webshop" className='Image'/>
+        <h1 className='Navbar-text'>Welcome to the Webshop!</h1>
+        <Button className='Button'>Login</Button>
+      </div>
     </>
   );
 }

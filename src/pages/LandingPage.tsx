@@ -4,6 +4,7 @@ function LandingPage() {
   return (
     <>
       <Navbar />
+      
     </>
   );
 }
