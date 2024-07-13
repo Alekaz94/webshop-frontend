@@ -1,4 +1,4 @@
-.Body {
+.navbar-body {
     display: flex;
     background-color: wheat;
     justify-content: space-between;
@@ -6,24 +6,19 @@
     padding: 1rem;
     position: relative;
     max-height: 100px;
+    max-width: 100%;
 }
 
-.Button {
-    color: black;
-    background-color: wheat;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 25px;
-}
-
-.Image {
+.navbar-image {
     width: 20%;
     height: 20%;
     text-shadow: 10;
 }
 
-.Navbar-text {
+.navbar-text {
     color: black;
     opacity: 90%;
+    font-family:cursive ;
+    align-self: center;
+    justify-self: center;
 }

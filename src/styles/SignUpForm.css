@@ -1,0 +1,84 @@
+.signUp-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    right: 30%;
+    width: 500px;
+    background-color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    border-radius: 10px;
+    box-shadow: 5px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.signUp-openForm-button {
+    color: black;
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.signUp-error-text {
+    color: red;
+    padding: 2px 2px 2px 100px;
+    margin-top: -5px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-family: inherit;
+}
+
+.signUp-textFields {
+    padding: 5px 5px 5px 100px;
+    margin: 2px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-family: inherit;
+}
+
+.signUp-labelFields {
+    margin-right: 5px;
+    font-family: inherit;
+}
+
+.signUp-inputFields {
+    border: 1px black solid;
+    padding: 5px;
+    margin: 2px;
+    width: 150px;
+}
+
+.signUp-button {
+    padding: 5px;
+    margin: 20px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    background-color: wheat;
+    align-self: flex-end;
+    color: black;
+    font-family: inherit;
+}
+
+.signUp-closeForm-button {
+    padding: 3px;
+    margin-bottom: -30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+.signUp-header {
+    margin-top: 10px;
+}
+
+.signUp-gotAnAccount-button {
+    border: none;
+    background-color: inherit;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
