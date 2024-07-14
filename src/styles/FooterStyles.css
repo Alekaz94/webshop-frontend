@@ -1,0 +1,27 @@
+.footer-body {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: -10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.footer-contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.footer-p {
+    align-items: flex-start;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

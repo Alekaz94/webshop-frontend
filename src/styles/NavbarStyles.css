@@ -10,6 +10,14 @@
     max-width: 100%;
 }
 
+.navbar-link {
+    align-self: center;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 200px;
+    border: none;
+}
+
 .navbar-image {
     width: 200px;
     height: 200px;
