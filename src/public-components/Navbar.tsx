@@ -1,6 +1,7 @@
+import { Input, Label, SearchField } from 'react-aria-components';
 import logo from '../images/Webshop_transparent.png';
 import '../styles/NavbarStyles.css';
-import SignUpForm from './SignUpForm';
+import LoginForm from './LoginForm';
 
 function Navbar() {
 
@@ -8,8 +9,13 @@ function Navbar() {
     <>
       <div className='navbar-body'>
         <img src={logo} alt="Webshop" className='navbar-image'/>
-        <h1 className='navbar-text'>Welcome to the Webshop!</h1>
-        <SignUpForm />
+        <div>
+          <SearchField className="navbar-searchbar">
+            <Label className="navbar-searchbar-label">Search</Label>
+            <Input className="navbar-searchbar-input" placeholder='Search product' />
+          </SearchField>
+        </div>
+        <LoginForm/>
       </div>
     </>
   );

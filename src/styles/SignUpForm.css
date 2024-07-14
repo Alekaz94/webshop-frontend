@@ -8,7 +8,7 @@
     right: 30%;
     width: 500px;
     background-color: wheat;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: inherit;
     font-weight: 200;
     border-radius: 10px;
     box-shadow: 5px 0px 2px rgba(0, 0, 0, 0.5);
@@ -21,6 +21,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 25px;
+    font-family: inherit;
 }
 
 .signUp-error-text {
@@ -47,13 +48,14 @@
 
 .signUp-inputFields {
     border: 1px black solid;
+    font-family: inherit;
     padding: 5px;
     margin: 2px;
     width: 150px;
 }
 
 .signUp-button {
-    padding: 5px;
+    padding: 10px;
     margin: 20px;
     border-radius: 50px;
     outline: none;
@@ -70,15 +72,9 @@
     margin-top: 10px;
     margin-right: 10px;
     align-self: flex-end;
+    font-family: inherit;
 }
 
 .signUp-header {
     margin-top: 10px;
-}
-
-.signUp-gotAnAccount-button {
-    border: none;
-    background-color: inherit;
-    margin-bottom: 5px;
-    cursor: pointer;
 }

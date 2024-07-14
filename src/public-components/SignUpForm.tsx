@@ -19,7 +19,7 @@ const signUpSchema = z.object({
 type TSignUpSchema = z.infer<typeof signUpSchema>
 
 function SignUpForm() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenSignUp, setIsOpenSignUp] = useState(false);
 
     const {
         register,
@@ -31,26 +31,22 @@ function SignUpForm() {
 
     const onClickSubmit = (data: TSignUpSchema) => {
         console.log(data);
-        setIsOpen(false);
+        setIsOpenSignUp(false);
     }
 
     const handleOpenSignUp = () => {
-        setIsOpen(true);
+        setIsOpenSignUp(true);
     }
 
     const handleCloseSignUp = () => {
-        setIsOpen(false);
-    }
-
-    const handleOpenLoginForm = () => {
-        setIsOpen(false);
+        setIsOpenSignUp(false);
     }
 
     return (
         <>        
-            {isOpen ? <Button isDisabled className='signUp-openForm-button' onPress={handleOpenSignUp}>Sign up</Button> 
+            {isOpenSignUp ? <Button isDisabled className='signUp-openForm-button' onPress={handleOpenSignUp}>Sign up</Button> 
             : <Button className='signUp-openForm-button' onPress={handleOpenSignUp}>Sign up</Button>}
-            {isOpen && <Form onSubmit={handleSubmit(onClickSubmit)} className="signUp-form-container">
+            {isOpenSignUp && <Form onSubmit={handleSubmit(onClickSubmit)} className="signUp-form-container">
                 <Button className="signUp-closeForm-button" onPress={handleCloseSignUp}>X</Button>
                 <h3 className="signUp-header">Sign up here!</h3>
                 <TextField name="FirstName" type="text" className="signUp-textFields">
@@ -99,7 +95,6 @@ function SignUpForm() {
                     </ul>
                 )}
                 <Button type="submit" className="signUp-button">Submit</Button>
-                <Button className="signUp-gotAnAccount-button" onPress={handleOpenLoginForm}>Already got an account?</Button>
             </Form> }
              </>
     )
