@@ -1,14 +1,23 @@
 import { Button, ToggleButton } from 'react-aria-components';
 import '../styles/ItemCard.css';
-import picture from '../images/Webshop.png';
 import ButtonGroup from './ButtonGroup';
 
-function ItemCard() {
+interface Item {
+  itemId: string;
+  itemName: string;
+  itemCost: number;
+  itemQuantity: number;
+  itemEnum: string;
+  soldOut: boolean;
+  url: string;
+}
+
+function ItemCard(props: Item) {
   return (
     <div className="itemCard">
-      <img className="card-image" src={picture} alt="" />
-      <h2 className="card-title">Webshop</h2>
-      <p className="card-text">100% cotton pants</p>
+      <img className="card-image" src={props.url} alt="" />
+      <h2 className="card-title">{props.itemEnum}</h2>
+      <p className="card-text">{props.itemName}</p>
       <ButtonGroup>
         <ToggleButton className="card-toggle-button">XS</ToggleButton>
         <ToggleButton className="card-toggle-button">S</ToggleButton>
@@ -16,7 +25,12 @@ function ItemCard() {
         <ToggleButton className="card-toggle-button">L</ToggleButton>
         <ToggleButton className="card-toggle-button">XL</ToggleButton>
       </ButtonGroup>
-      <Button>Add to cart</Button>
+      <p className="card-text">{props.itemCost}$</p>
+      {props.soldOut ? (
+        <p className="card-text-soldOut">Out of stock!</p>
+      ) : (
+        <Button>Add to cart</Button>
+      )}
     </div>
   );
 }
