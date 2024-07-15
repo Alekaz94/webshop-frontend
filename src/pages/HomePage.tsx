@@ -4,14 +4,11 @@ import Navbar from '../public-components/Navbar';
 import '../styles/HomePageStyles.css';
 
 function HomePage() {
+
   return (
     <div className="homepage-body">
       <Navbar />
       <div className="homepage-content">
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
         <ItemCard />
         <ItemCard />
         <ItemCard />

@@ -10,18 +10,9 @@
     max-width: 100%;
 }
 
-.navbar-link {
-    align-self: center;
-    justify-content: center;
-    max-width: 200px;
-    max-height: 200px;
-    border: none;
-}
-
 .navbar-image {
     width: 200px;
     height: 200px;
-    text-shadow: 10;
 }
 
 .navbar-text {
@@ -35,9 +26,16 @@
 .navbar-searchbar {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .navbar-searchbar-label {
-    justify-self: center;
     align-self: center;
+}
+
+.navbar-searchbar-input {
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
 }

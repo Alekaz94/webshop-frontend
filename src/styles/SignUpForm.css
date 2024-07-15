@@ -33,7 +33,7 @@
 .signUp-textFields {
     padding: 5px 5px 5px 100px;
     margin: 2px;
-    justify-self: flex-start;
+    justify-content: space-between;
     align-self: flex-start;
 }
 

@@ -9,12 +9,10 @@ function Navbar() {
     <>
       <div className='navbar-body'>
         <img src={logo} alt="Webshop" className='navbar-image'/>
-        <div>
           <SearchField className="navbar-searchbar">
             <Label className="navbar-searchbar-label">Search</Label>
             <Input className="navbar-searchbar-input" placeholder='Search product' />
           </SearchField>
-        </div>
         <LoginForm/>
       </div>
     </>

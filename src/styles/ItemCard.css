@@ -19,10 +19,23 @@
 .itemCard .card-title {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    font-size: 20px;
     color: black;
 }
 
 .itemCard .card-text {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.itemCard .card-toggle-button {
+    padding: 5px;
+    margin: 2px;
+    font-size: small;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    justify-content: center;
 }
